@@ -1,0 +1,10 @@
+#!/bin/bash
+
+input_arg=$1
+while test ${#} -gt 1
+do
+  shift
+  eval $input_arg "$1"
+done
+
+
